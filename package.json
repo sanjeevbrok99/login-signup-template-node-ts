@@ -1,7 +1,7 @@
 {
-  "name": "maya_money",
+  "name": "login-signup-ts",
   "version": "0.0.1",
-  "description": "Maya Finance  project developed with Express,Typescript,Mysql,TypeORM.",
+  "description": "login-signup-ts  project developed with Express,Typescript,Mysql,TypeORM.",
   "devDependencies": {
     "@types/node": "^8.0.29",
     "nodemon": "^2.0.20",

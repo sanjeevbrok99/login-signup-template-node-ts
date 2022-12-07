@@ -2,9 +2,9 @@ import { users } from '../entity/users';
 import { getRepository } from 'typeorm'; 
 import {Request, Response } from 'express'; 
 import { validate } from 'class-validator'; 
-const bcrypt = require('bcryptjs'); //use to hash passwords 
-const jwt = require('jsonwebtoken'); //use to create, verify, and decode tokens 
-const secret = require('../config/clientSecret').secret; //contains secret key used to sign tokens 
+const bcrypt = require('bcryptjs'); 
+const jwt = require('jsonwebtoken'); 
+const secret = require('../config/clientSecret').secret;  
  
 export const signIn = async ( 
     req: Request, 
@@ -44,7 +44,6 @@ export const changePassword = async (req: Request, res: Response):Promise<Respon
       res.status(400).send(); 
     } 
    
-    //Get user from the database 
     const userRepository = getRepository(users); 
     let user: users; 
     try { 

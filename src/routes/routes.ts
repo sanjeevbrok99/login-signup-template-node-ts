@@ -5,7 +5,7 @@ import user from './userRoute'
 const routes = Router();     
 routes.get('/', (req, res) => 
   res.send( 
-    'This is  a basic Authentication using TypeScript, Node.js, TypeORM and Mysql',
+    'This is  a basic Authentication Template using TypeScript, Node.js, TypeORM and Mysql',
   ), 
 ) 
 routes.use("/auth", auth);     

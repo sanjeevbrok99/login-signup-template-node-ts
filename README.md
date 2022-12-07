@@ -1,4 +1,4 @@
-#  rest-api  Building with Node-Express-TypeScript-TypeORM
+#  rest-api   Building with Node-Express-TypeScript-TypeORM
 
 Steps to run this project: 
  

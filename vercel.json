@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "maya-finance",
+    "name": "login-signup",
     "builds": [
        { "src": "index.ts", "use": "@vercel/node" }
     ],

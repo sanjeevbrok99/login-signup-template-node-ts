@@ -51,7 +51,6 @@ export const createUser = async (req: Request, res: Response):Promise<Response> 
   export const updateUser = async (req: Request, res: Response) => { 
   //Get the ID from the url  
   const id = req.params.id; 
-  //Get values from the body  
   const { username, password,address,firstName,phoneNumber, lastName, email } = req.body; 
   //Try to find user on database 
   const userRepository = getRepository(users); 
@@ -59,7 +58,6 @@ export const createUser = async (req: Request, res: Response):Promise<Response> 
   try { 
     user = await userRepository.findOneOrFail(id); 
   } catch (error) { 
-    //If not found, send a 404 response 
     res.status(404).send("User not found"); 
     return; 
   } 
@@ -77,14 +75,13 @@ export const createUser = async (req: Request, res: Response):Promise<Response> 
     res.status(400).send(errors); 
     return; 
   } 
-  //Try to safe, if fails, that means username already in use  
+    
   try { 
     await userRepository.save(user);  
   } catch (e) { 
     res.status(409).send("username already in use"); 
     return; 
   } 
-  //After all send a 204 (no content, but accepted) response 
   res.status(204).send();  
   }; 
 // Delete User by Id 

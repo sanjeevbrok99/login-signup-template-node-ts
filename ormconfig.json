@@ -1,12 +1,12 @@
 { 
    "type": "mysql", 
    "host": "localhost", 
-   "port": 3306,      
+   "port": 3306,       
    "username": "root",               
    "password": "RagnarLothBrok@1999", 
    "database": "moneysaving", 
    "synchronize": true, 
-   "logging": false, 
+   "logging": false,  
    "entities": [             
       "src/entity/**/*.ts" 
    ], 
