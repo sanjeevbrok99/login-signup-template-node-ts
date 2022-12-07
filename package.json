@@ -1,0 +1,36 @@
+{
+  "name": "maya_money",
+  "version": "0.0.1",
+  "description": "Maya Finance  project developed with Express,Typescript,Mysql,TypeORM.",
+  "devDependencies": {
+    "@types/node": "^8.0.29",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.10",
+    "@types/helmet": "^4.0.0",
+    "@types/jsonwebtoken": "^8.5.1",
+    "bcryptjs": "^2.4.3",
+    "class-validator": "^0.13.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.14.1",
+    "mysql2": "^2.3.3",
+    "reflect-metadata": "^0.1.10",
+    "ts-node-dev": "^1.1.6",
+    "typeorm": "0.2.32",
+    "winston": "^3.8.2"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts"
+  }
+}
